@@ -22,10 +22,17 @@ body {
   font-family: "Spartan", sans-serif;
   background: #ffffff;
   padding: 127px 165px 100px;
+  /* background-image: url(../images/bg-pattern-top-desktop.svg);
+  background-repeat: no-repeat; */
+}
+
+body::before {
 }
 
 .wraper {
   display: flex;
+  margin-left: 165px;
+  position: absolute;
 }
 
 .top-wraper {
@@ -82,8 +89,17 @@ body {
   /* top: ; */
 }
 
-.rate .review img {
-  background-repeat: repeat;
+.review p,
+.rebort p,
+.besttech p {
+  padding-left: 23.55px;
+}
+
+.rate .review img,
+.rebort img,
+.besttech img {
+  /* background-repeat: repeat; */
+  padding-right: 8.45px;
 }
 
 .rebort {
@@ -103,6 +119,8 @@ body {
   align-items: center;
   width: 445px;
   height: 56px;
+  padding-left: 32px;
+  /* padding-right: 81.55px; */
 
   font-style: normal;
   font-weight: bold;
@@ -114,6 +132,53 @@ body {
   /* color: var(--Very-Dark-Magenta); */
   background-color: var(--Pink);
   border-radius: 8px;
+}
+
+.bottom-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buyers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /* position: absolute; */
+}
+
+.buyer1 {
+  background: var(--Very-Dark-Magenta);
+  color: #ffffff;
+  width: 350px;
+  height: 234px;
+  border-radius: 8px;
+  position: absolute;
+  top: 434px;
+
+}
+
+.buyer2 {
+  background: var(--Very-Dark-Magenta);
+  color: #ffffff;
+  width: 350px;
+  height: 234px;
+  border-radius: 8px;
+  position: absolute;
+  top: 450px;
+  margin-left: 545px;
+}
+
+.buyer3 {
+  background: var(--Very-Dark-Magenta);
+  color: #ffffff;
+  width: 350px;
+  height: 234px;
+  border-radius: 8px;
+  position: absolute;
+  top: 466px;
+  margin-left: 925px;
 }
 
 .attribution {
