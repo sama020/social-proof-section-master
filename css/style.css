@@ -24,41 +24,78 @@ body {
   padding: 127px 165px 100px;
 }
 
-.head {
+.wraper {
+  display: flex;
+}
+
+.top-wraper {
   display: flex;
   /* justify-content: space-between; */
   position: relative;
 }
 
-.head .title {
+.top-wraper .title {
   display: flex;
   flex-direction: column;
   position: relative;
   width: 445px;
   height: 235px;
-  margin-right: 125px;
+  /* margin-right: 125px; */
 }
 
-.head .rate {
-  position: relative;
+.top-wraper .title h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -1.71429px;
+
+  color: #512051;
+  margin-bottom: 6px;
+}
+
+.top-wraper .title p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.5px;
+
+  color: #927b91;
+}
+
+.top-wraper .rate {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
   width: 540px;
   height: 200px;
+  margin-left: 125px;
 }
 
 .review {
   position: relative;
-  left: 181px;
+  left: 125px;
   margin-bottom: 16px;
   /* top: ; */
 }
 
+.rate .review img {
+  background-repeat: repeat;
+}
+
 .rebort {
-    position: relative;
+  position: relative;
   left: 173px;
   margin-bottom: 16px;
 }
 
 .besttech {
+  position: relative;
+
+  left: 220px;
 }
 
 .inspect {
